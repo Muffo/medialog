@@ -1,0 +1,12 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Specifiche dei Requisiti del Progetto mediaLog
+
+
+= Details =
+
+Il sistema deve permettere di memorizzare il contenuto dei supporti in cui l'utente salva i file per il backup o l'archiviazione, in modo tale che l'utente che vuole trovare un certo contenuto, riceva dall'sistema un informazione su quale supporto è memorizzato.
+Il supporto può essere un CD,DVD o un Blu-ray-disck.
+il sistema deve identificare ogni supporto in maniera univoca, e richiedere all'utente se necessario di appore sul supporto un etichetta, e comunque per ogni supporto che viene aggiunto al database bisogna assicurarsi che il nome usato dal sistema per identificare il supporto sia lo stesso usato dall'utente.
