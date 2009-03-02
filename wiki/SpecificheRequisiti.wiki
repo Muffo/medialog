@@ -13,4 +13,4 @@ Il sistema al termine della scansione fornisce all'utente un nome da dare al sup
 
 Successivamente l'utente che necessita di reperire un file, effettua la ricerca sull'intero del catalogo e rapidamente il sistema comunica il supporto che lo contiene. La ricerca può essere effettuata in base al nome del file, l'estensione e la dimensione.
 
-Il sistema prevede la gestione di prestiti di vari supporti; in particolare tiene traccia del nome della persona.
+Il sistema prevede la gestione di prestiti di vari supporti. in particolare tiene traccia del nome della persona a cui lo si presta.
