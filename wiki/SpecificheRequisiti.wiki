@@ -7,7 +7,7 @@ MediaLog permette di catalogare il contenuto di supporti di archiviazione come C
 
 = Details =
 
-L'utente può memorizzare sul catalogo attraverso la scansione di quest'ultimo. Il sistema identifica il supporto e associa ad esso tutti i file.
+L'utente può memorizzare sul catalogo il contenuto di un supporto attraverso la scansione di quest'ultimo. Il sistema identifica il supporto e associa ad esso tutti i file.
 Il sistema e pensato per dispositivi di sola lettura.
 Il sistema al termine della scansione fornisce all'utente un nome da dare al supporto per identificarlo in maniera univoca.
 
