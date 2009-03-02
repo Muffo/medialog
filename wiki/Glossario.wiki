@@ -3,8 +3,22 @@ Termini:
 
 Supporto (di archiviazione): dispositivo su cui si registrano informazioni (dati), identificato univocamente all'interno del sistema.
 
+Dispsitivo di sola lettura: vedi supporto.
+
 Contenuto: è un insieme di file memorizzati su un supporto.
 
 Utente: attore principale del sistema MediaLog.
 
-File:  sequenza (di byte), immagazzinati come un solo elemento su un supporto,
+File:  sequenza (di byte), immagazzinati come un solo elemento su un supporto, è caratterizzato da nome,dimensione e estensione
+
+Catalogo: elenco contenente tutti i file di cui l'utente vuole tenere traccia.
+
+Scansione: permette di memorizzare il contenuto di un supporto nel catalogo.
+
+Ricerca: permette di ottenere il nome del supporto che contiene il file ricercato.
+
+Identificativo: nome univoco associato ad ogni supporto.
+
+Nome:
+
+Nome della persona:
