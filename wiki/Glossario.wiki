@@ -19,6 +19,10 @@ Ricerca: permette di ottenere il nome del supporto che contiene il file ricercat
 
 Identificativo: nome univoco associato ad ogni supporto.
 
-Nome:
+Prestito: temporanea concessione di un Supporto ad una Persona.
 
-Nome della persona:
+Persona: destinataria del Prestito, identificata univocamente da un nome.
+
+Prestatario: vedi Persona.
+
+Lista dei Prestiti: elenco di tutti i Prestiti di cui l'utente vuole tener traccia.
