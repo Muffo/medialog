@@ -12,7 +12,8 @@ Il sistema e pensato per dispositivi di sola lettura.
 Nel caso in cui il supporto si danneggi o sia smarrito, deve essere possibile effettuare la cancellazione dal catalogo del supporto.
 Il sistema al termine della scansione fornisce all'utente un nome da dare al supporto per identificarlo in maniera univoca.
 
-Successivamente l'utente che necessita di reperire un file, effettua la ricerca sull'intero del catalogo e rapidamente il sistema comunica il supporto che lo contiene. La ricerca può essere effettuata in base al nome del file, l'estensione e la dimensione.
-Il Sistema consente, dato l'identificativo di un supporto, di visualizzarne il contenuto.
 
-Il sistema prevede la gestione di prestiti di vari supporti. in particolare tiene traccia del nome della persona a cui lo si presta.
+Successivamente l'utente che necessita di reperire un file, effettua la ricerca sull'intero catalogo e rapidamente il sistema comunica il supporto che lo contiene. La ricerca può essere effettuata in base al nome del file, l'estensione e la dimensione.
+Il Sistema consente inoltre, dato l'identificativo di un supporto, di visualizzarne il contenuto.
+
+Il Sistema prevede infine la gestione di prestiti dei vari supporti. In particolare tiene traccia del nome della persona ricevente il supporto, associato a quest'ultimo. Non sono previsti avvisi per le eventuali scadenze dei prestiti: il sistema si limita solamente a fornire la lista dei prestiti effettuati (e ovviamente ne consente la modifica), sarà l'utente a comunicare con i prestatari per riottenere il supporto prestato.
