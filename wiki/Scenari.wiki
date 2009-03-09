@@ -68,3 +68,19 @@ Flusso principale:
 
 Flusso alternativo:
 3.a) L'utente lascia il campo vuoto nonostante lo abbia selezionato -> il sistema genera un messaggio d'errore adeguato e ritorna al punto 2.
+
+SCENARIO  4.0 Presta:
+
+Attori:
+- Utente
+-
+
+Pre-condizioni:
+- Esiste un supporto in archivio
+- 
+
+Flusso principale:
+1) L'utente 
+
+Flusso alternativo:
+3.a) L'utente lascia il campo vuoto nonostante lo abbia selezionato -> il sistema genera un messaggio d'errore adeguato e ritorna al punto 2.
