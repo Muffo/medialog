@@ -31,4 +31,40 @@ Flusso alternativo:
 1.a) percorso non valido-> il sistema ritorna al punto 1.
 4.a) la scansione fallisce-> il sistema avvisa l'utente. si esce dallo scenario.
 
-SCENARIO  1.0 Aggiunta supporto:
+SCENARIO  2.0 Ricerca:
+
+Attori:
+- Utente
+-
+
+Pre-condizioni:
+- catalogo non vuoto.
+- 
+
+Flusso principale:
+1) Il sistema richiede all'utente di impostare i criteri di ricerca[->3.0].
+2) L'utente da l'avvio alla ricerca.
+3) il sistema effettua la ricerca e produce il risultato.
+4) Il sistema visualizza il risultato.
+
+Flusso alternativo:
+3.a)Nel caso la ricerca abbia risultato vuoto,il sistema lo comunica e ritorna al punto 1.
+
+
+SCENARIO  3.0 Imposta criterio di ricerca:
+
+Attori:
+- Utente
+-
+
+Pre-condizioni:
+- 
+- 
+
+Flusso principale:
+1) L'utente seleziona su quali supporti effettuare la ricerca.
+2) L'utente seleziona su quali caratteristiche del file vuole effettuare la ricerca.
+3) L'utente immette i valori per i campi selezionati al punto 2.
+
+Flusso alternativo:
+3.a) L'utente lascia il campo vuoto nonostante lo abbia selezionato -> il sistema genera un messaggio d'errore adeguato e ritorna al punto 2.
