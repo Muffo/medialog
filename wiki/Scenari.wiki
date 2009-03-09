@@ -1,0 +1,19 @@
+#summary One-sentence summary of this page.
+
+= Introduction =
+
+Scenari dei casi d'uso più significativi:
+- Aggiunta supporto
+- 
+- 
+- 
+
+= Details =
+* Text in *bold* or _italic_
+*SCENARIO  Aggiunta supporto*
+_Attori:_
+- Utente
+- 
+_Pre-condizioni:_
+- è inserito
+- 
