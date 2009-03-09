@@ -10,10 +10,25 @@ Scenari dei casi d'uso più significativi:
 
 = Details =
 
-*SCENARIO  Aggiunta supporto*
-_Attori:_
+SCENARIO  1.0 Aggiunta supporto:
+
+Attori:
 - Utente
-- 
-_Pre-condizioni:_
-- è inserito
-- 
+-
+
+Pre-condizioni:
+- è inserito un supporto.
+- Il supporto non deve essere già stato catalogato.
+
+Flusso principale:
+1) L'utente seleziona il percorso su cui effetuare la scansione.
+2) L'utente comunica il tipo di supporto.
+3) Il sistema calcola l'identificativo da assegnare in base al tipo immmesso.
+4) Il sistema effettua la scansione.
+5) Il sistema comunica l'idenficativo all'utente
+
+Flusso alternativo:
+1.a) percorso non valido-> il sistema ritorna al punto 1.
+4.a) la scansione fallisce-> il sistema avvisa l'utente. si esce dallo scenario.
+
+SCENARIO  1.0 Aggiunta supporto:
