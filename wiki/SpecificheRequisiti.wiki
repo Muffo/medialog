@@ -1,9 +1,14 @@
 #summary Requisiti del Progetto
 
-= Introduction =
+= Title =
 
 MediaLog permette di catalogare il contenuto di supporti di archiviazione come CD, DVD o Blu-Ray.
 
+= Introduction =
+
+Il backup dei dati viene spesso eseguito su CD e DVD di cui spesso però ci si dimentica il contenuto. La ricerca dei dati archiviati, qualora non si ricordi esattamente dove sono memorizzati, può diventare un'operazione estremamente lunga e noiosa. Allo stesso tempo può tornare molto comodo visualizzare i file contenuti in un supporto senza che questo debba essere fisicamente inserito nel PC.
+
+MediaLog si propone come soluzione a questo tipo di problemi, catalogando automaticamente il contenuto di CD e DVD e consentendo di effettuare rapide ricerche.
 
 = Details =
 
@@ -14,8 +19,9 @@ Il sistema al termine della scansione fornisce all'utente un nome da dare al sup
 
 
 Successivamente l'utente che necessita di reperire un file, effettua la ricerca sull'intero catalogo e rapidamente il sistema comunica il supporto che lo contiene. La ricerca può essere effettuata in base al nome del file, l'estensione e la dimensione.
+
 /--Nel caso in cui l'utente lo necessiti, è possibile effettuare ricerche tramite l'uso di wildcards.--/
-Il Sistema consente inoltre, dato l'identificativo di un supporto, di visualizzarne il contenuto.
-/--Sia quest'ultima visualizzazione, sia il risultato di una ricerca di file, possono essere prodotte in output ordinate in base al valore di uno qualunque dei 3 campi caratterizzanti il catalogo dei file.--/
+
+Il Sistema consente inoltre, dato l'identificativo di un supporto, di visualizzarne il contenuto. Sia quest'ultima visualizzazione, sia il risultato di una ricerca di file, possono essere prodotte in output ordinate in base al valore di uno qualunque dei 3 campi caratterizzanti il catalogo dei file.
 
 Il Sistema prevede infine la gestione di prestiti dei vari supporti. In particolare tiene traccia del nome della persona ricevente il supporto, associato a quest'ultimo. Non sono previsti avvisi per le eventuali scadenze dei prestiti: il sistema si limita solamente a fornire la lista dei prestiti effettuati (e ovviamente ne consente la modifica), sarà l'utente a comunicare con i prestatari per riottenere il supporto prestato.
