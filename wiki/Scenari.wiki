@@ -9,7 +9,7 @@ Scenari dei casi d'uso più significativi:
 - 
 
 = Details =
-* Text in *bold* or _italic_
+
 *SCENARIO  Aggiunta supporto*
 _Attori:_
 - Utente
