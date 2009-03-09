@@ -69,7 +69,7 @@ Flusso principale:
 Flusso alternativo:
 3.a) L'utente lascia il campo vuoto nonostante lo abbia selezionato -> il sistema genera un messaggio d'errore adeguato e ritorna al punto 2.
 
-SCENARIO  4.0 Presta:
+SCENARIO  4.0 Inserimento:
 
 Attori:
 - Utente
@@ -80,7 +80,10 @@ Pre-condizioni:
 - 
 
 Flusso principale:
-1) L'utente 
+1) L'utente fornisce il nome del supporto.
+2) L'utente fornisce il nome della persona ricevente il supporto.
 
 Flusso alternativo:
-3.a) L'utente lascia il campo vuoto nonostante lo abbia selezionato -> il sistema genera un messaggio d'errore adeguato e ritorna al punto 2.
+1.a) il nome del supporto non è valido -> il sistema richiede l'inserimento e torna al punto 1.
+1.b) il supporto è gia in prestito -> il sistema lo comunica e si esce dallo scenario.
+2.a) l'utente non fornisce un nome persona -> il sistema richiede l'inserimento del nome e torna al punto 2.
