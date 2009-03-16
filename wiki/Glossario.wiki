@@ -1,9 +1,11 @@
 #summary One-sentence summary of this page.
 Termini:
 
-Supporto (di archiviazione): dispositivo su cui si registrano informazioni (dati), identificato univocamente all'interno del sistema.
+Supporto (di archiviazione): dispositivo su cui si registrano informazioni (dati). E' caratterizzato da:
+   - Identificativo: nome univoco associato ad ogni supporto.   
+   - Tipologia (ad esempio CD, DVD o Blu-Ray)
 
-Dispsitivo di sola lettura: vedi supporto.
+Dispositivo di sola lettura: un qualunque supporto il cui contenuto non può cambiare.
 
 Contenuto: è un insieme di file memorizzati su un supporto.
 
@@ -11,18 +13,14 @@ Utente: attore principale del sistema MediaLog.
 
 File:  sequenza (di byte), immagazzinati come un solo elemento su un supporto, è caratterizzato da nome,dimensione e estensione
 
-Catalogo: elenco contenente tutti i file di cui l'utente vuole tenere traccia.
+Catalogo: elenco contenente tutti i supporti di cui l'utente vuole tenere traccia.
 
 Scansione: permette di memorizzare il contenuto di un supporto nel catalogo.
 
-Ricerca: permette di ottenere il nome del supporto che contiene il file ricercato.
+Ricerca: permette di ottenere il nome del supporto che contiene il file ricercato. Può essere effettuata sull'intero catalogo o su un sottoinsieme di esso.
 
-Identificativo: nome univoco associato ad ogni supporto.
+Prestito: temporanea concessione di un Supporto ad una Persona. Associato ad una data di inizio e fine.
 
-Prestito: temporanea concessione di un Supporto ad una Persona.
+Persona: destinataria del Prestito, caratterizzata da un nome, cognome, telefono ed email.
 
-Persona: destinataria del Prestito, identificata univocamente da un nome.
-
-Prestatario: vedi Persona.
-
-Lista dei Prestiti: elenco di tutti i Prestiti di cui l'utente vuole tener traccia.
+Lista dei Prestiti: elenco di tutti i Prestiti di cui l'utente vuole tener traccia. 
