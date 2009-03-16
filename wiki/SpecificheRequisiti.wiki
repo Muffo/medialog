@@ -12,14 +12,13 @@ MediaLog si propone come soluzione a questo tipo di problemi, catalogando automa
 
 = Details =
 
-L'utente può memorizzare sul catalogo il contenuto di un supporto attraverso la scansione di quest'ultimo. Il sistema identifica il supporto e associa ad esso tutti i file.
+L'utente inserisce un supporto di un determinato tipo (CD, DVD o Blu-Ray) nel computer ed il sistema, effettuando la scansione, memorizza sul catalogo il contenuto di quest'ultimo.
 Il sistema è pensato per dispositivi di sola lettura.
 Nel caso in cui il supporto si danneggi o sia smarrito, deve essere possibile effettuare la cancellazione dal catalogo del supporto.
-Il sistema al termine della scansione fornisce all'utente un nome da dare al supporto per identificarlo in maniera univoca.
-
+Il sistema al termine della scansione fornisce all'utente un identificativo generato sulla base del tipo di supporto.
 
 Successivamente l'utente che necessita di reperire un file, effettua la ricerca sull'intero catalogo o parte di esso e rapidamente il sistema comunica il supporto che lo contiene  e le informazioni relative ad esso. La ricerca può essere effettuata in base al nome del file, l'estensione e la dimensione.
 Il Sistema consente inoltre, dato l'identificativo di un supporto, di visualizzarne il contenuto. Sia quest'ultima visualizzazione, sia il risultato di una ricerca di file, possono essere prodotte in output ordinate in base al valore di uno qualunque dei 3 campi caratterizzanti il catalogo dei file.
 
 
-Il Sistema prevede infine la gestione di prestiti dei vari supporti. In particolare tiene traccia del nome, cognome, telefono ed e-mail della persona ricevente il supporto. Non sono previsti avvisi per le eventuali scadenze dei prestiti: il sistema si limita solamente a fornire la lista dei prestiti effettuati (e ovviamente ne consente la modifica), sarà l'utente a comunicare con i prestatari per riottenere il supporto prestato.
+Il Sistema prevede infine la gestione di prestiti dei vari supporti. In particolare tiene traccia del nome, cognome, telefono ed e-mail della persona ricevente il supporto e delle date di inizio e fine prestito. Non sono previsti avvisi per le eventuali scadenze dei prestiti: il sistema si limita solamente a fornire la lista dei prestiti effettuati (e ovviamente ne consente la modifica), sarà l'utente a comunicare con i prestatari per riottenere il supporto prestato.
