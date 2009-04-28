@@ -1,0 +1,20 @@
+#summary Descrizione pattern utilizzati
+
+= Introduction =
+
+Descrizione pattern utilizzati
+
+
+= Details =
+
+"Ogni supporto ha un filesystem strutturato in direttori e file: un direttorio può contenere altri direttori e/o files."
+
+Il contenuto dei ogni supporto è quindi strutturato come un albero n-ario che permette di rappresentare il filesystem come una gerarchia di oggetti contenitori/contenuti.
+
+// immagine di una gerarchia di filesystem
+
+Si è quindi deciso di utilizzare il pattern COMPOSITE in modo tale da trattare in modo uniforme oggetti singoli e oggetti composti.
+
+// immagine del pattern
+
+L'elemento Component è il Nodo, la classe astratta che contiene i campi presenti in tutti gli elementi della gerarchia (nel nostro caso il "nome").
