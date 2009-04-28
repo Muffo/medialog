@@ -12,7 +12,7 @@ MediaLog si propone come soluzione a questo tipo di problemi, catalogando automa
 
 = Details =
 
-L'utente inserisce un supporto di un determinato tipo (CD, DVD o Blu-Ray) nel computer ed il sistema, effettuando la scansione, memorizza sul catalogo il contenuto di quest'ultimo.
+L'utente inserisce un supporto di un determinato tipo (CD, DVD o Blu-Ray) nel computer ed il sistema, effettuando la scansione, memorizza sul catalogo il contenuto di quest'ultimo. Ogni supporto ha un filesystem strutturato in direttori e file: un direttorio può contenere altri direttori e/o files.
 Il sistema è pensato per dispositivi di sola lettura.
 Nel caso in cui il supporto si danneggi o sia smarrito, deve essere possibile effettuare la cancellazione dal catalogo del supporto.
 Il sistema al termine della scansione fornisce all'utente un identificativo generato sulla base del tipo di supporto.
