@@ -1,4 +1,4 @@
-#summary One-sentence summary of this page.
+#summary Termini
 Termini:
 
 Supporto (di archiviazione): dispositivo su cui si registrano informazioni (dati). E' caratterizzato da:
@@ -12,6 +12,8 @@ Contenuto: è un insieme di file memorizzati su un supporto.
 Utente: attore principale del sistema MediaLog.
 
 File:  sequenza (di byte), immagazzinati come un solo elemento su un supporto, è caratterizzato da nome,dimensione e estensione
+
+Direttorio: elemento del filesystem utilizzato per ordinare i file in una gerarchia.
 
 Catalogo: elenco contenente tutti i supporti di cui l'utente vuole tenere traccia.
 
