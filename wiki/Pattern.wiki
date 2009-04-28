@@ -18,3 +18,11 @@ Si è quindi deciso di utilizzare il pattern COMPOSITE in modo tale da trattare 
 // immagine del pattern
 
 L'elemento Component è il Nodo, la classe astratta che contiene i campi presenti in tutti gli elementi della gerarchia (nel nostro caso il "nome").
+
+L'elemento Leaf è il File che infatti non ha figli nella gerarchia e contiene i campi che lo descrivono ("estensione" e "dimensione")
+
+L'elemento Composite è il Direttorio che descrive gli elementi che possono avere figli. I figli possono essere altri Direttori o File.
+
+Il Client è il Supporto che contiene una lista di Nodo.
+
+La realizzazione della associazioni uno a molti avviene tramite una classe contenitore.
