@@ -33,4 +33,11 @@ La realizzazione della associazioni uno a molti avviene tramite una classe conte
 
 Per generare l'identificativo di un supporto è necessario utilizzare una serie di algoritmi differenti. Ciascuno di questi restituirà una stringa che l'utente può scrivere sul supporto per riconoscerlo. 
 
-Si utilizza quindi un pattern Strategy che consente di definire un insieme di algoritmi tra loro correlati rendendoli intercambiabili. In questo modo sarà possibile inserire anche nuovi algoritmi di generazione per identificatori di supporti di nuova generazione.
+Si utilizza quindi un pattern Strategy che consente di definire un insieme di algoritmi tra loro correlati rendendoli intercambiabili. In questo modo sarà possibile inserire facilmente anche nuovi algoritmi di generazione per identificatori di supporti di nuova generazione.
+
+
+"La ricerca può essere effettuata in base al nome del file, all'estensione oppure alla dimensione."
+
+L'algoritmo di ricerca non è quindi fisso, ma cambia in base al vincolo inserito dall'utente. 
+
+Si utilizza quindi un pattern Strategy che consente di definire un insieme di algoritmi tra loro correlati rendendoli intercambiabili. In questo modo sarà possibile inserire facilmente anche nuovi algoritmi di ricerca in futuro.
