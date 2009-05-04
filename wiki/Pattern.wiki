@@ -5,7 +5,7 @@
 Descrizione pattern utilizzati
 
 
-= Details =
+= Composite =
 
 "Ogni supporto ha un filesystem strutturato in direttori e file: un direttorio può contenere altri direttori e/o files."
 
@@ -26,3 +26,11 @@ L'elemento Composite è il Direttorio che descrive gli elementi che possono aver
 Il Client è il Supporto che contiene una lista di Nodo.
 
 La realizzazione della associazioni uno a molti avviene tramite una classe contenitore. Inoltre in Nodo è presente un riferimento opzionale al Direttorio che lo contiene per velocizzare la navigazione all'interno del filesystem; tale riferimento deve essere coerente con la lista di Nodi contenuti nel Direttorio.
+
+= Strategy =
+
+"Il sistema al termine della scansione fornisce all'utente un identificativo generato sulla base del tipo di supporto."
+
+Per generare l'identificativo di un supporto è necessario utilizzare una serie di algoritmi differenti. Ciascuno di questi restituirà una stringa che l'utente può scrivere sul supporto per riconoscerlo. 
+
+Si utilizza quindi un pattern Strategy che consente di definire un insieme di algoritmi tra loro correlati rendendoli intercambiabili. In questo modo sarà possibile inserire anche nuovi algoritmi di generazione per identificatori di supporti di nuova generazione.
