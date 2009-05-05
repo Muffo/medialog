@@ -2,7 +2,7 @@
 
 = Introduction =
 
-Scenari dei casi d'uso piÃ¹ significativi:
+Scenari dei casi d'uso pi significativi:
 - Aggiunta supporto
 - 
 - 
@@ -17,8 +17,8 @@ Attori:
 -
 
 Pre-condizioni:
-- Ã¨ inserito un supporto.
-- Il supporto non deve essere giÃ  stato catalogato.
+- E' inserito un supporto.
+- Il supporto non deve essere giˆ stato catalogato.
 
 Flusso principale:
 1) L'utente seleziona il percorso su cui effetuare la scansione.
@@ -28,8 +28,8 @@ Flusso principale:
 5) Il sistema comunica l'idenficativo all'utente
 
 Flusso alternativo:
-1.a) percorso non valido-> il sistema ritorna al punto 1.
-4.a) la scansione fallisce-> il sistema avvisa l'utente. si esce dallo scenario.
+1.a) Percorso non valido -> il sistema ritorna al punto 1.
+4.a) La scansione fallisce -> il sistema avvisa l'utente. si esce dallo scenario.
 
 SCENARIO  2.0 Ricerca:
 
@@ -38,17 +38,17 @@ Attori:
 -
 
 Pre-condizioni:
-- catalogo non vuoto.
+- Catalogo non vuoto.
 - 
 
 Flusso principale:
-1) Il sistema richiede all'utente di impostare i criteri di ricerca[->3.0].
+1) Il sistema richiede all'utente di impostare i criteri di ricerca [-> 3.0].
 2) L'utente da l'avvio alla ricerca.
 3) il sistema effettua la ricerca e produce il risultato.
 4) Il sistema visualizza il risultato.
 
 Flusso alternativo:
-3.a)Nel caso la ricerca abbia risultato vuoto,il sistema lo comunica e ritorna al punto 1.
+3.a) Nel caso la ricerca abbia risultato vuoto,il sistema lo comunica e ritorna al punto 1.
 
 
 SCENARIO  3.0 Imposta criterio di ricerca:
@@ -84,6 +84,6 @@ Flusso principale:
 2) L'utente fornisce il nome della persona ricevente il supporto.
 
 Flusso alternativo:
-1.a) il nome del supporto non Ã¨ valido -> il sistema richiede l'inserimento e torna al punto 1.
-1.b) il supporto Ã¨ gia in prestito -> il sistema lo comunica e si esce dallo scenario.
-2.a) l'utente non fornisce un nome persona -> il sistema richiede l'inserimento del nome e torna al punto 2.
+1.a) Il nome del supporto non  valido -> il sistema richiede l'inserimento e torna al punto 1.
+1.b) Il supporto  gia in prestito -> il sistema lo comunica e si esce dallo scenario.
+2.a) L'utente non fornisce un nome persona -> il sistema richiede l'inserimento del nome e torna al punto 2.

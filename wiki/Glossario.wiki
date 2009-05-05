@@ -5,13 +5,13 @@ Supporto (di archiviazione): dispositivo su cui si registrano informazioni (dati
    - Identificativo: nome univoco associato ad ogni supporto.   
    - Tipologia (ad esempio CD, DVD o Blu-Ray)
 
-Dispositivo di sola lettura: un qualunque supporto il cui contenuto non pu√≤ cambiare.
+Dispositivo di sola lettura: un qualunque supporto il cui contenuto non può cambiare.
 
-Contenuto: √® un insieme di file memorizzati su un supporto.
+Contenuto: è un insieme di file memorizzati su un supporto.
 
 Utente: attore principale del sistema MediaLog.
 
-File:  sequenza (di byte), immagazzinati come un solo elemento su un supporto, √® caratterizzato da nome,dimensione e estensione
+File:  sequenza (di byte), immagazzinati come un solo elemento su un supporto, è caratterizzato da nome, dimensione e estensione
 
 Direttorio: elemento del filesystem utilizzato per ordinare i file in una gerarchia.
 
@@ -19,7 +19,7 @@ Catalogo: elenco contenente tutti i supporti di cui l'utente vuole tenere tracci
 
 Scansione: permette di memorizzare il contenuto di un supporto nel catalogo.
 
-Ricerca: permette di ottenere il nome del supporto che contiene il file ricercato. Pu√≤ essere effettuata sull'intero catalogo o su un sottoinsieme di esso.
+Ricerca: permette di ottenere il nome del supporto che contiene il file ricercato. Può essere effettuata sull'intero catalogo o su un sottoinsieme di esso.
 
 Prestito: temporanea concessione di un Supporto ad una Persona. Associato ad una data di inizio e fine.
 

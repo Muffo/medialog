@@ -6,20 +6,20 @@ MediaLog permette di catalogare il contenuto di supporti di archiviazione come C
 
 = Introduction =
 
-Il backup dei dati viene spesso eseguito su CD e DVD di cui spesso per√≤ ci si dimentica il contenuto. La ricerca dei dati archiviati, qualora non si ricordi esattamente dove sono memorizzati, pu√≤ diventare un'operazione estremamente lunga e noiosa. Allo stesso tempo pu√≤ tornare molto comodo visualizzare i file contenuti in un supporto senza che questo debba essere fisicamente inserito nel PC.
+Il backup dei dati viene spesso eseguito su CD e DVD di cui spesso però ci si dimentica il contenuto. La ricerca dei dati archiviati, qualora non si ricordi esattamente dove sono memorizzati, può diventare un'operazione estremamente lunga e noiosa. Allo stesso tempo può tornare molto comodo visualizzare i file contenuti in un supporto senza che questo debba essere fisicamente inserito nel PC.
 
 MediaLog si propone come soluzione a questo tipo di problemi, catalogando automaticamente il contenuto di CD e DVD e consentendo di effettuare rapide ricerche.
 
 = Details =
 
-L'utente inserisce un supporto di un determinato tipo (CD, DVD o Blu-Ray) nel computer ed il sistema, effettuando la scansione, memorizza sul catalogo il contenuto di quest'ultimo. Ogni supporto ha un filesystem strutturato in direttori e file: un direttorio pu√≤ contenere altri direttori e/o files.
-Il sistema √® pensato per dispositivi di sola lettura.
+L'utente inserisce un supporto di un determinato tipo (CD, DVD o Blu-Ray) nel computer ed il sistema, effettuando la scansione, memorizza sul catalogo il contenuto di quest'ultimo. Ogni supporto ha un filesystem strutturato in direttori e file: un direttorio può contenere altri direttori e/o files.
+Il sistema è pensato per dispositivi di sola lettura.
 Nel caso in cui il supporto si danneggi o sia smarrito, deve essere possibile effettuare la cancellazione dal catalogo del supporto.
 Il sistema al termine della scansione fornisce all'utente un identificativo generato sulla base del tipo di supporto.
 
-Successivamente l'utente che necessita di reperire un file, effettua la ricerca sull'intero catalogo e rapidamente il sistema comunica il supporto che lo contiene  e le informazioni relative ad esso. La ricerca pu√≤ essere effettuata in base al nome del file, all'estensione oppure alla dimensione.
+Successivamente l'utente che necessita di reperire un file, effettua la ricerca sull'intero catalogo e rapidamente il sistema comunica il supporto che lo contiene  e le informazioni relative ad esso. La ricerca può essere effettuata in base al nome del file, all'estensione oppure alla dimensione.
 Il Sistema consente inoltre, dato l'identificativo di un supporto, di visualizzarne il contenuto. 
 
 // Sia quest'ultima visualizzazione, sia il risultato di una ricerca di file, possono essere prodotte in output ordinate in base al valore di uno qualunque dei 3 campi caratterizzanti il catalogo dei file.
 
-Il Sistema prevede infine la gestione di prestiti dei vari supporti. In particolare contiene un'anagrafe delle persone conosciute tenendo traccia del nome, cognome, telefono ed e-mail. Per ogni prestito √® possibile visualizzare la data in cui √® stato effettuato. Non sono previsti avvisi per le eventuali scadenze dei prestiti: il sistema si limita solamente a fornire la lista dei prestiti effettuati (e ovviamente ne consente la modifica), sar√† l'utente a comunicare con i prestatari per riottenere il supporto prestato. Inoltre per ogni Supporto deve essere possibile visualizzare le informazioni sulla persona a cui √® stato eventualmente prestato.
+Il Sistema prevede infine la gestione di prestiti dei vari supporti. In particolare contiene un'anagrafe delle persone conosciute tenendo traccia del nome, cognome, telefono ed e-mail. Per ogni prestito è possibile visualizzare la data in cui è stato effettuato. Non sono previsti avvisi per le eventuali scadenze dei prestiti: il sistema si limita solamente a fornire la lista dei prestiti effettuati (e ovviamente ne consente la modifica), sarà l'utente a comunicare con i prestatari per riottenere il supporto prestato. Inoltre per ogni Supporto deve essere possibile visualizzare le informazioni sulla persona a cui è stato eventualmente prestato.
