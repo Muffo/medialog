@@ -7,6 +7,7 @@ MediaLog permette di catalogare il contenuto di supporti di archiviazione come C
 = Introduzione =
 
 Solitamente il backup dei dati viene eseguito su CD e DVD nei quali per˜ risulta difficile tenere traccia del contenuto. La ricerca dei dati archiviati, qualora non si ricordi esattamente dove sono memorizzati, pu˜ diventare un'operazione estremamente lunga e noiosa. Allo stesso tempo pu˜ tornare molto comodo visualizzare la lista dei file contenuti in un supporto senza che questo debba essere fisicamente inserito nel PC.
+Inoltre pu˜ essere utile gestire in modo semplice il prestito dei propri CD agli amici.
 
 MediaLog si propone come soluzione a questo tipo di problemi, catalogando automaticamente il contenuto di CD e DVD e consentendo di effettuare rapide ricerche.
 

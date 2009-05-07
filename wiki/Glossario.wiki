@@ -27,7 +27,7 @@ Risultato ricerca: nomi dei supporti che contengono almeno un file corrispondent
 Chiave di ricerca: vincolo in base al quale viene effettuata la ricerca. Pu˜ essere: 
 	- Il nome del file
 	_ L'estensione
-	- La dimensione
+	- La dimensione, intesa come intervallo tra un valore massimo e un valore minimo
 
 Criterio di ricerca: vedi Chiave di ricerca
 

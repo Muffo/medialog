@@ -19,7 +19,6 @@ Attori:
 
 Pre-condizioni:
 - E' inserito un supporto all'interno del computer.
-- Il supporto non deve essere giˆ stato catalogato.
 
 Flusso principale:
 1) L'utente seleziona il percorso su cui effetuare la scansione.
