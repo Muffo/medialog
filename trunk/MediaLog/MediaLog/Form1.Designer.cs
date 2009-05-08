@@ -30,12 +30,16 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.viewCatalogo = new System.Windows.Forms.TabPage();
+            this.comboBoxElencoSorgenti = new System.Windows.Forms.ComboBox();
             this.buttonAggiungiCatalogo = new System.Windows.Forms.Button();
             this.GroupBoxVisualizzaEliminaSupporto = new System.Windows.Forms.GroupBox();
             this.buttonRimuoviDaCatalogo = new System.Windows.Forms.Button();
+            this.dataGridViewContenutoSupporto = new System.Windows.Forms.DataGridView();
             this.buttonVisualizzaContenuto = new System.Windows.Forms.Button();
             this.elencoSupporti = new System.Windows.Forms.CheckedListBox();
             this.viewRicerca = new System.Windows.Forms.TabPage();
+            this.groupBoxRisultatoRicerca = new System.Windows.Forms.GroupBox();
+            this.dataGridViewRisultatoRicerca = new System.Windows.Forms.DataGridView();
             this.groupBoxParametriRicerca = new System.Windows.Forms.GroupBox();
             this.comboBoxDimensione = new System.Windows.Forms.ComboBox();
             this.buttonAvviaRicerca = new System.Windows.Forms.Button();
@@ -45,7 +49,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.viewAnagrafe = new System.Windows.Forms.TabPage();
+            this.groupBoxElencoPersone = new System.Windows.Forms.GroupBox();
+            this.dataGridViewElencoPersone = new System.Windows.Forms.DataGridView();
             this.groupBoxCancellazionePersone = new System.Windows.Forms.GroupBox();
+            this.comboBoxNickname = new System.Windows.Forms.ComboBox();
             this.buttonCancellaPersona = new System.Windows.Forms.Button();
             this.groupBoxInserimentoPersone = new System.Windows.Forms.GroupBox();
             this.textBoxTelefono = new System.Windows.Forms.TextBox();
@@ -60,43 +67,36 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.viewPrestiti = new System.Windows.Forms.TabPage();
-            this.groupBoxInserisciPrestito = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.buttonPresta = new System.Windows.Forms.Button();
-            this.textBoxNuovoNickname = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.buttonRestituisci = new System.Windows.Forms.Button();
+            this.comboBoxElencoSupportiPrestati = new System.Windows.Forms.ComboBox();
             this.groupBoxPrestitiAttivi = new System.Windows.Forms.GroupBox();
             this.dataGridViewElencoPrestiti = new System.Windows.Forms.DataGridView();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBoxElencoSupportiPrestati = new System.Windows.Forms.ComboBox();
-            this.buttonRestituisci = new System.Windows.Forms.Button();
-            this.comboBoxNicknamePrestiti = new System.Windows.Forms.ComboBox();
+            this.groupBoxInserisciPrestito = new System.Windows.Forms.GroupBox();
             this.comboBoxIdSupporti = new System.Windows.Forms.ComboBox();
-            this.comboBoxNickname = new System.Windows.Forms.ComboBox();
-            this.comboBoxElencoSorgenti = new System.Windows.Forms.ComboBox();
-            this.groupBoxElencoPersone = new System.Windows.Forms.GroupBox();
-            this.dataGridViewElencoPersone = new System.Windows.Forms.DataGridView();
-            this.groupBoxRisultatoRicerca = new System.Windows.Forms.GroupBox();
-            this.dataGridViewRisultatoRicerca = new System.Windows.Forms.DataGridView();
-            this.dataGridViewContenutoSupporto = new System.Windows.Forms.DataGridView();
+            this.comboBoxNicknamePrestiti = new System.Windows.Forms.ComboBox();
+            this.textBoxNuovoNickname = new System.Windows.Forms.TextBox();
+            this.buttonPresta = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.viewCatalogo.SuspendLayout();
             this.GroupBoxVisualizzaEliminaSupporto.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewContenutoSupporto)).BeginInit();
             this.viewRicerca.SuspendLayout();
+            this.groupBoxRisultatoRicerca.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRisultatoRicerca)).BeginInit();
             this.groupBoxParametriRicerca.SuspendLayout();
             this.viewAnagrafe.SuspendLayout();
+            this.groupBoxElencoPersone.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewElencoPersone)).BeginInit();
             this.groupBoxCancellazionePersone.SuspendLayout();
             this.groupBoxInserimentoPersone.SuspendLayout();
             this.viewPrestiti.SuspendLayout();
-            this.groupBoxInserisciPrestito.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.groupBoxPrestitiAttivi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewElencoPrestiti)).BeginInit();
-            this.groupBox1.SuspendLayout();
-            this.groupBoxElencoPersone.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewElencoPersone)).BeginInit();
-            this.groupBoxRisultatoRicerca.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRisultatoRicerca)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewContenutoSupporto)).BeginInit();
+            this.groupBoxInserisciPrestito.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -123,6 +123,15 @@
             this.viewCatalogo.TabIndex = 0;
             this.viewCatalogo.Text = "Gestione Catalogo";
             this.viewCatalogo.UseVisualStyleBackColor = true;
+            // 
+            // comboBoxElencoSorgenti
+            // 
+            this.comboBoxElencoSorgenti.FormattingEnabled = true;
+            this.comboBoxElencoSorgenti.Location = new System.Drawing.Point(13, 13);
+            this.comboBoxElencoSorgenti.Name = "comboBoxElencoSorgenti";
+            this.comboBoxElencoSorgenti.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxElencoSorgenti.TabIndex = 4;
+            this.comboBoxElencoSorgenti.Text = "D:\\";
             // 
             // buttonAggiungiCatalogo
             // 
@@ -155,6 +164,15 @@
             this.buttonRimuoviDaCatalogo.Text = "Rimozione da catalogo";
             this.buttonRimuoviDaCatalogo.UseVisualStyleBackColor = true;
             // 
+            // dataGridViewContenutoSupporto
+            // 
+            this.dataGridViewContenutoSupporto.AllowUserToOrderColumns = true;
+            this.dataGridViewContenutoSupporto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewContenutoSupporto.Location = new System.Drawing.Point(143, 20);
+            this.dataGridViewContenutoSupporto.Name = "dataGridViewContenutoSupporto";
+            this.dataGridViewContenutoSupporto.Size = new System.Drawing.Size(350, 286);
+            this.dataGridViewContenutoSupporto.TabIndex = 2;
+            // 
             // buttonVisualizzaContenuto
             // 
             this.buttonVisualizzaContenuto.Location = new System.Drawing.Point(10, 21);
@@ -183,6 +201,24 @@
             this.viewRicerca.TabIndex = 1;
             this.viewRicerca.Text = "Ricerca File";
             this.viewRicerca.UseVisualStyleBackColor = true;
+            // 
+            // groupBoxRisultatoRicerca
+            // 
+            this.groupBoxRisultatoRicerca.Controls.Add(this.dataGridViewRisultatoRicerca);
+            this.groupBoxRisultatoRicerca.Location = new System.Drawing.Point(7, 93);
+            this.groupBoxRisultatoRicerca.Name = "groupBoxRisultatoRicerca";
+            this.groupBoxRisultatoRicerca.Size = new System.Drawing.Size(493, 255);
+            this.groupBoxRisultatoRicerca.TabIndex = 3;
+            this.groupBoxRisultatoRicerca.TabStop = false;
+            this.groupBoxRisultatoRicerca.Text = "RisultatoRicerca";
+            // 
+            // dataGridViewRisultatoRicerca
+            // 
+            this.dataGridViewRisultatoRicerca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewRisultatoRicerca.Location = new System.Drawing.Point(12, 19);
+            this.dataGridViewRisultatoRicerca.Name = "dataGridViewRisultatoRicerca";
+            this.dataGridViewRisultatoRicerca.Size = new System.Drawing.Size(475, 230);
+            this.dataGridViewRisultatoRicerca.TabIndex = 4;
             // 
             // groupBoxParametriRicerca
             // 
@@ -281,6 +317,24 @@
             this.viewAnagrafe.Text = "Gestione anagrafe";
             this.viewAnagrafe.UseVisualStyleBackColor = true;
             // 
+            // groupBoxElencoPersone
+            // 
+            this.groupBoxElencoPersone.Controls.Add(this.dataGridViewElencoPersone);
+            this.groupBoxElencoPersone.Location = new System.Drawing.Point(13, 176);
+            this.groupBoxElencoPersone.Name = "groupBoxElencoPersone";
+            this.groupBoxElencoPersone.Size = new System.Drawing.Size(483, 166);
+            this.groupBoxElencoPersone.TabIndex = 2;
+            this.groupBoxElencoPersone.TabStop = false;
+            this.groupBoxElencoPersone.Text = "Elenco persone:";
+            // 
+            // dataGridViewElencoPersone
+            // 
+            this.dataGridViewElencoPersone.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewElencoPersone.Location = new System.Drawing.Point(10, 19);
+            this.dataGridViewElencoPersone.Name = "dataGridViewElencoPersone";
+            this.dataGridViewElencoPersone.Size = new System.Drawing.Size(467, 139);
+            this.dataGridViewElencoPersone.TabIndex = 3;
+            // 
             // groupBoxCancellazionePersone
             // 
             this.groupBoxCancellazionePersone.Controls.Add(this.comboBoxNickname);
@@ -291,6 +345,15 @@
             this.groupBoxCancellazionePersone.TabIndex = 1;
             this.groupBoxCancellazionePersone.TabStop = false;
             this.groupBoxCancellazionePersone.Text = "Cancellazione persona";
+            // 
+            // comboBoxNickname
+            // 
+            this.comboBoxNickname.FormattingEnabled = true;
+            this.comboBoxNickname.Location = new System.Drawing.Point(10, 16);
+            this.comboBoxNickname.Name = "comboBoxNickname";
+            this.comboBoxNickname.Size = new System.Drawing.Size(216, 21);
+            this.comboBoxNickname.TabIndex = 2;
+            this.comboBoxNickname.Text = "Nickname persone esistenti";
             // 
             // buttonCancellaPersona
             // 
@@ -387,7 +450,6 @@
             this.textBoxNome.Size = new System.Drawing.Size(157, 20);
             this.textBoxNome.TabIndex = 3;
             this.textBoxNome.Text = "inserire nome (opzionale)";
-           
             // 
             // label6
             // 
@@ -428,57 +490,34 @@
             this.viewPrestiti.Text = "Presta Supporto";
             this.viewPrestiti.UseVisualStyleBackColor = true;
             // 
-            // groupBoxInserisciPrestito
+            // groupBox1
             // 
-            this.groupBoxInserisciPrestito.Controls.Add(this.comboBoxIdSupporti);
-            this.groupBoxInserisciPrestito.Controls.Add(this.comboBoxNicknamePrestiti);
-            this.groupBoxInserisciPrestito.Controls.Add(this.textBoxNuovoNickname);
-            this.groupBoxInserisciPrestito.Controls.Add(this.buttonPresta);
-            this.groupBoxInserisciPrestito.Controls.Add(this.label10);
-            this.groupBoxInserisciPrestito.Controls.Add(this.label9);
-            this.groupBoxInserisciPrestito.Location = new System.Drawing.Point(12, 4);
-            this.groupBoxInserisciPrestito.Name = "groupBoxInserisciPrestito";
-            this.groupBoxInserisciPrestito.Size = new System.Drawing.Size(484, 79);
-            this.groupBoxInserisciPrestito.TabIndex = 1;
-            this.groupBoxInserisciPrestito.TabStop = false;
-            this.groupBoxInserisciPrestito.Text = "inserimento nuovo prestito";
+            this.groupBox1.Controls.Add(this.buttonRestituisci);
+            this.groupBox1.Controls.Add(this.comboBoxElencoSupportiPrestati);
+            this.groupBox1.Location = new System.Drawing.Point(13, 90);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(483, 60);
+            this.groupBox1.TabIndex = 3;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Restituzione prestiti";
             // 
-            // label9
+            // buttonRestituisci
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 41);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(63, 13);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "Id supporto:";
+            this.buttonRestituisci.Location = new System.Drawing.Point(299, 17);
+            this.buttonRestituisci.Name = "buttonRestituisci";
+            this.buttonRestituisci.Size = new System.Drawing.Size(169, 23);
+            this.buttonRestituisci.TabIndex = 2;
+            this.buttonRestituisci.Text = "Restituzione";
+            this.buttonRestituisci.UseVisualStyleBackColor = true;
             // 
-            // label10
+            // comboBoxElencoSupportiPrestati
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 16);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(102, 13);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Nickname persona: ";
-
-            // 
-            // buttonPresta
-            // 
-            this.buttonPresta.Location = new System.Drawing.Point(300, 41);
-            this.buttonPresta.Name = "buttonPresta";
-            this.buttonPresta.Size = new System.Drawing.Size(178, 23);
-            this.buttonPresta.TabIndex = 4;
-            this.buttonPresta.Text = "Presta!";
-            this.buttonPresta.UseVisualStyleBackColor = true;
-            // 
-            // textBoxNuovoNickname
-            // 
-            this.textBoxNuovoNickname.Location = new System.Drawing.Point(300, 15);
-            this.textBoxNuovoNickname.Name = "textBoxNuovoNickname";
-            this.textBoxNuovoNickname.Size = new System.Drawing.Size(178, 20);
-            this.textBoxNuovoNickname.TabIndex = 5;
-            this.textBoxNuovoNickname.Text = "nuovo nickname";
-
+            this.comboBoxElencoSupportiPrestati.FormattingEnabled = true;
+            this.comboBoxElencoSupportiPrestati.Location = new System.Drawing.Point(8, 19);
+            this.comboBoxElencoSupportiPrestati.Name = "comboBoxElencoSupportiPrestati";
+            this.comboBoxElencoSupportiPrestati.Size = new System.Drawing.Size(145, 21);
+            this.comboBoxElencoSupportiPrestati.TabIndex = 1;
+            this.comboBoxElencoSupportiPrestati.Text = "Id supporto";
             // 
             // groupBoxPrestitiAttivi
             // 
@@ -498,43 +537,20 @@
             this.dataGridViewElencoPrestiti.Size = new System.Drawing.Size(469, 150);
             this.dataGridViewElencoPrestiti.TabIndex = 1;
             // 
-            // groupBox1
+            // groupBoxInserisciPrestito
             // 
-            this.groupBox1.Controls.Add(this.buttonRestituisci);
-            this.groupBox1.Controls.Add(this.comboBoxElencoSupportiPrestati);
-            this.groupBox1.Location = new System.Drawing.Point(13, 90);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(483, 60);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Restituzione prestiti";
-            // 
-            // comboBoxElencoSupportiPrestati
-            // 
-            this.comboBoxElencoSupportiPrestati.FormattingEnabled = true;
-            this.comboBoxElencoSupportiPrestati.Location = new System.Drawing.Point(8, 19);
-            this.comboBoxElencoSupportiPrestati.Name = "comboBoxElencoSupportiPrestati";
-            this.comboBoxElencoSupportiPrestati.Size = new System.Drawing.Size(145, 21);
-            this.comboBoxElencoSupportiPrestati.TabIndex = 1;
-            this.comboBoxElencoSupportiPrestati.Text = "Id supporto";
-            // 
-            // buttonRestituisci
-            // 
-            this.buttonRestituisci.Location = new System.Drawing.Point(299, 17);
-            this.buttonRestituisci.Name = "buttonRestituisci";
-            this.buttonRestituisci.Size = new System.Drawing.Size(169, 23);
-            this.buttonRestituisci.TabIndex = 2;
-            this.buttonRestituisci.Text = "Restituzione";
-            this.buttonRestituisci.UseVisualStyleBackColor = true;
-            // 
-            // comboBoxNicknamePrestiti
-            // 
-            this.comboBoxNicknamePrestiti.FormattingEnabled = true;
-            this.comboBoxNicknamePrestiti.Location = new System.Drawing.Point(150, 16);
-            this.comboBoxNicknamePrestiti.Name = "comboBoxNicknamePrestiti";
-            this.comboBoxNicknamePrestiti.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxNicknamePrestiti.TabIndex = 6;
-            this.comboBoxNicknamePrestiti.Text = "nickname esistenti";
+            this.groupBoxInserisciPrestito.Controls.Add(this.comboBoxIdSupporti);
+            this.groupBoxInserisciPrestito.Controls.Add(this.comboBoxNicknamePrestiti);
+            this.groupBoxInserisciPrestito.Controls.Add(this.textBoxNuovoNickname);
+            this.groupBoxInserisciPrestito.Controls.Add(this.buttonPresta);
+            this.groupBoxInserisciPrestito.Controls.Add(this.label10);
+            this.groupBoxInserisciPrestito.Controls.Add(this.label9);
+            this.groupBoxInserisciPrestito.Location = new System.Drawing.Point(12, 4);
+            this.groupBoxInserisciPrestito.Name = "groupBoxInserisciPrestito";
+            this.groupBoxInserisciPrestito.Size = new System.Drawing.Size(484, 79);
+            this.groupBoxInserisciPrestito.TabIndex = 1;
+            this.groupBoxInserisciPrestito.TabStop = false;
+            this.groupBoxInserisciPrestito.Text = "inserimento nuovo prestito";
             // 
             // comboBoxIdSupporti
             // 
@@ -545,68 +561,49 @@
             this.comboBoxIdSupporti.TabIndex = 7;
             this.comboBoxIdSupporti.Text = "Id supporti";
             // 
-            // comboBoxNickname
+            // comboBoxNicknamePrestiti
             // 
-            this.comboBoxNickname.FormattingEnabled = true;
-            this.comboBoxNickname.Location = new System.Drawing.Point(10, 16);
-            this.comboBoxNickname.Name = "comboBoxNickname";
-            this.comboBoxNickname.Size = new System.Drawing.Size(216, 21);
-            this.comboBoxNickname.TabIndex = 2;
-            this.comboBoxNickname.Text = "Nickname persone esistenti";
+            this.comboBoxNicknamePrestiti.FormattingEnabled = true;
+            this.comboBoxNicknamePrestiti.Location = new System.Drawing.Point(150, 16);
+            this.comboBoxNicknamePrestiti.Name = "comboBoxNicknamePrestiti";
+            this.comboBoxNicknamePrestiti.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxNicknamePrestiti.TabIndex = 6;
+            this.comboBoxNicknamePrestiti.Text = "nickname esistenti";
             // 
-            // comboBoxElencoSorgenti
+            // textBoxNuovoNickname
             // 
-            this.comboBoxElencoSorgenti.FormattingEnabled = true;
-            this.comboBoxElencoSorgenti.Location = new System.Drawing.Point(13, 13);
-            this.comboBoxElencoSorgenti.Name = "comboBoxElencoSorgenti";
-            this.comboBoxElencoSorgenti.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxElencoSorgenti.TabIndex = 4;
-            this.comboBoxElencoSorgenti.Text = "D:\\";
+            this.textBoxNuovoNickname.Location = new System.Drawing.Point(300, 15);
+            this.textBoxNuovoNickname.Name = "textBoxNuovoNickname";
+            this.textBoxNuovoNickname.Size = new System.Drawing.Size(178, 20);
+            this.textBoxNuovoNickname.TabIndex = 5;
+            this.textBoxNuovoNickname.Text = "nuovo nickname";
             // 
-            // groupBoxElencoPersone
+            // buttonPresta
             // 
-            this.groupBoxElencoPersone.Controls.Add(this.dataGridViewElencoPersone);
-            this.groupBoxElencoPersone.Location = new System.Drawing.Point(13, 176);
-            this.groupBoxElencoPersone.Name = "groupBoxElencoPersone";
-            this.groupBoxElencoPersone.Size = new System.Drawing.Size(483, 166);
-            this.groupBoxElencoPersone.TabIndex = 2;
-            this.groupBoxElencoPersone.TabStop = false;
-            this.groupBoxElencoPersone.Text = "Elenco persone:";
+            this.buttonPresta.Location = new System.Drawing.Point(300, 41);
+            this.buttonPresta.Name = "buttonPresta";
+            this.buttonPresta.Size = new System.Drawing.Size(178, 23);
+            this.buttonPresta.TabIndex = 4;
+            this.buttonPresta.Text = "Presta!";
+            this.buttonPresta.UseVisualStyleBackColor = true;
             // 
-            // dataGridViewElencoPersone
+            // label10
             // 
-            this.dataGridViewElencoPersone.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewElencoPersone.Location = new System.Drawing.Point(10, 19);
-            this.dataGridViewElencoPersone.Name = "dataGridViewElencoPersone";
-            this.dataGridViewElencoPersone.Size = new System.Drawing.Size(467, 139);
-            this.dataGridViewElencoPersone.TabIndex = 3;
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 16);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(102, 13);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Nickname persona: ";
             // 
-            // groupBoxRisultatoRicerca
+            // label9
             // 
-            this.groupBoxRisultatoRicerca.Controls.Add(this.dataGridViewRisultatoRicerca);
-            this.groupBoxRisultatoRicerca.Location = new System.Drawing.Point(7, 93);
-            this.groupBoxRisultatoRicerca.Name = "groupBoxRisultatoRicerca";
-            this.groupBoxRisultatoRicerca.Size = new System.Drawing.Size(493, 255);
-            this.groupBoxRisultatoRicerca.TabIndex = 3;
-            this.groupBoxRisultatoRicerca.TabStop = false;
-            this.groupBoxRisultatoRicerca.Text = "RisultatoRicerca";
-            // 
-            // dataGridViewRisultatoRicerca
-            // 
-            this.dataGridViewRisultatoRicerca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewRisultatoRicerca.Location = new System.Drawing.Point(12, 19);
-            this.dataGridViewRisultatoRicerca.Name = "dataGridViewRisultatoRicerca";
-            this.dataGridViewRisultatoRicerca.Size = new System.Drawing.Size(475, 230);
-            this.dataGridViewRisultatoRicerca.TabIndex = 4;
-            // 
-            // dataGridViewContenutoSupporto
-            // 
-            this.dataGridViewContenutoSupporto.AllowUserToOrderColumns = true;
-            this.dataGridViewContenutoSupporto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewContenutoSupporto.Location = new System.Drawing.Point(143, 20);
-            this.dataGridViewContenutoSupporto.Name = "dataGridViewContenutoSupporto";
-            this.dataGridViewContenutoSupporto.Size = new System.Drawing.Size(350, 286);
-            this.dataGridViewContenutoSupporto.TabIndex = 2;
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 41);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(63, 13);
+            this.label9.TabIndex = 2;
+            this.label9.Text = "Id supporto:";
             // 
             // Form1
             // 
@@ -615,28 +612,29 @@
             this.ClientSize = new System.Drawing.Size(508, 376);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MediaLog";
             this.tabControl1.ResumeLayout(false);
             this.viewCatalogo.ResumeLayout(false);
             this.GroupBoxVisualizzaEliminaSupporto.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewContenutoSupporto)).EndInit();
             this.viewRicerca.ResumeLayout(false);
+            this.groupBoxRisultatoRicerca.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRisultatoRicerca)).EndInit();
             this.groupBoxParametriRicerca.ResumeLayout(false);
             this.groupBoxParametriRicerca.PerformLayout();
             this.viewAnagrafe.ResumeLayout(false);
+            this.groupBoxElencoPersone.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewElencoPersone)).EndInit();
             this.groupBoxCancellazionePersone.ResumeLayout(false);
             this.groupBoxInserimentoPersone.ResumeLayout(false);
             this.groupBoxInserimentoPersone.PerformLayout();
             this.viewPrestiti.ResumeLayout(false);
-            this.groupBoxInserisciPrestito.ResumeLayout(false);
-            this.groupBoxInserisciPrestito.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.groupBoxPrestitiAttivi.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewElencoPrestiti)).EndInit();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBoxElencoPersone.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewElencoPersone)).EndInit();
-            this.groupBoxRisultatoRicerca.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewRisultatoRicerca)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewContenutoSupporto)).EndInit();
+            this.groupBoxInserisciPrestito.ResumeLayout(false);
+            this.groupBoxInserisciPrestito.PerformLayout();
             this.ResumeLayout(false);
 
         }
