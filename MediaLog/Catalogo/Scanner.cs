@@ -26,10 +26,7 @@ namespace Catalogo
             Direttorio DirRoot = new Direttorio(ListRoot, "root", null);
             Supporto res = new Supporto("primo", "DVD", DirRoot);
             addFile(root, ListRoot, DirRoot);
-            foreach (DirectoryInfo dir in root.GetDirectories())
-            {
-            
-            }
+            addDir(root, ListRoot, DirRoot);
             return res;
         }
 
@@ -40,7 +37,18 @@ namespace Catalogo
                 ListRoot.Add(new Composite.File(file.Name, file.Length, DirRoot));
             }
         }
-       
+        private static void addDir(DirectoryInfo root, List<Nodo> ListRoot, Direttorio DirRoot)
+        {
+            
+            foreach (DirectoryInfo dir in root.GetDirectories())
+            {
+                List<Nodo> nuovaList= new List<Nodo>();
+                Direttorio cur= new Direttorio(nuovaList, dir.Name, DirRoot);
+                ListRoot.Add(cur);
+                addFile(dir, nuovaList, cur);
+                addDir(dir, nuovaList, cur);
+            }
+        } 
         //
         //private List<Nodo> ListFiles(DirectoryInfo percorso,Direttorio parent)
         //{
