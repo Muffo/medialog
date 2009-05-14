@@ -22,17 +22,24 @@ namespace MediaLog
 
             GestoreCatalogo.aggiungiSupporto(comboBoxElencoSorgenti.Text);
            CatalogoSingleton catSing = CatalogoSingleton.getInstance();
-           foreach (Supporto sup in catSing.Supporti)
-           {
-               elencoSupporti.Items.Add(sup.Id);
-           }
+           RefreshSupporti(catSing);
+        }
+
+        private void RefreshSupporti(CatalogoSingleton catSing)
+        {
+            elencoSupporti.Items.Clear();
+            foreach (Supporto sup in catSing.Supporti)
+            {
+                elencoSupporti.Items.Add(sup.Id);
+                elencoSupporti.SetItemChecked(0, true);
+            }
         }
 
         private void buttonVisualizzaContenuto_Click(object sender, EventArgs e)
         {
             List<string> res = new List<string>();
-            
-            GestoreCatalogo.visualizzaSupporto(elencoSupporti.SelectedItem.ToString()).GetBulkInit(res);
+            dataGridViewContenutoSupporto.Columns.Clear();
+            GestoreCatalogo.visualizzaSupporto(elencoSupporti.CheckedItems[0].ToString()).GetBulkInit(res);
             dataGridViewContenutoSupporto.Columns.Add("nome file", "nomi contenuti");
             foreach(string file in res)
             dataGridViewContenutoSupporto.Rows.Add(file);
@@ -41,8 +48,10 @@ namespace MediaLog
 
         private void buttonRimuoviDaCatalogo_Click(object sender, EventArgs e)
         {
-            GestoreCatalogo.eliminaSupporto(elencoSupporti.SelectedItem.ToString());
+            CatalogoSingleton catSing = CatalogoSingleton.getInstance();
+            GestoreCatalogo.eliminaSupporto(elencoSupporti.CheckedItems[0].ToString());
             
+            RefreshSupporti(catSing);
         }
     
         
