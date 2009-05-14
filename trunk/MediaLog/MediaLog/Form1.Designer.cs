@@ -131,7 +131,9 @@
             this.comboBoxElencoSorgenti.Name = "comboBoxElencoSorgenti";
             this.comboBoxElencoSorgenti.Size = new System.Drawing.Size(121, 21);
             this.comboBoxElencoSorgenti.TabIndex = 4;
-            this.comboBoxElencoSorgenti.Text = "C:\\\\Users\\\\cometspa\\\\Documents\\\\progettoIngSoft";
+            this.comboBoxElencoSorgenti.Text = "F:\\";
+            this.comboBoxElencoSorgenti.Items.Add("F:\\");
+            this.comboBoxElencoSorgenti.Items.Add("C:\\\\Users\\\\cometspa\\\\Documents\\\\progettoIngSoft");
             // 
             // buttonAggiungiCatalogo
             // 

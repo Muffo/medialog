@@ -23,8 +23,8 @@ namespace Catalogo
         {
             DirectoryInfo root = new DirectoryInfo(percorso);
             List<Nodo> ListRoot = new List<Nodo>();
-            Direttorio DirRoot = new Direttorio(ListRoot, "root", null);
-            Supporto res = new Supporto("primo", "DVD", DirRoot);
+            Direttorio DirRoot = new Direttorio(ListRoot, "sup" + CatalogoSingleton.getInstance().Supporti.Count, null);
+            Supporto res = new Supporto("sup"+CatalogoSingleton.getInstance().Supporti.Count, "DVD", DirRoot);
             addFile(root, ListRoot, DirRoot);
             addDir(root, ListRoot, DirRoot);
             return res;
