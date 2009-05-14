@@ -131,7 +131,7 @@
             this.comboBoxElencoSorgenti.Name = "comboBoxElencoSorgenti";
             this.comboBoxElencoSorgenti.Size = new System.Drawing.Size(121, 21);
             this.comboBoxElencoSorgenti.TabIndex = 4;
-            this.comboBoxElencoSorgenti.Text = "D:\\";
+            this.comboBoxElencoSorgenti.Text = "C:\\\\Users\\\\cometspa\\\\Documents\\\\progettoIngSoft";
             // 
             // buttonAggiungiCatalogo
             // 
@@ -141,6 +141,7 @@
             this.buttonAggiungiCatalogo.TabIndex = 3;
             this.buttonAggiungiCatalogo.Text = "-> aggiungi supporto a catalogo";
             this.buttonAggiungiCatalogo.UseVisualStyleBackColor = true;
+            this.buttonAggiungiCatalogo.Click += new System.EventHandler(this.buttonAggiungiCatalogo_Click);
             // 
             // GroupBoxVisualizzaEliminaSupporto
             // 
@@ -163,13 +164,17 @@
             this.buttonRimuoviDaCatalogo.TabIndex = 3;
             this.buttonRimuoviDaCatalogo.Text = "Rimozione da catalogo";
             this.buttonRimuoviDaCatalogo.UseVisualStyleBackColor = true;
+            this.buttonRimuoviDaCatalogo.Click += new System.EventHandler(this.buttonRimuoviDaCatalogo_Click);
             // 
             // dataGridViewContenutoSupporto
             // 
+            this.dataGridViewContenutoSupporto.AllowUserToAddRows = false;
+            this.dataGridViewContenutoSupporto.AllowUserToDeleteRows = false;
             this.dataGridViewContenutoSupporto.AllowUserToOrderColumns = true;
             this.dataGridViewContenutoSupporto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewContenutoSupporto.Location = new System.Drawing.Point(143, 20);
             this.dataGridViewContenutoSupporto.Name = "dataGridViewContenutoSupporto";
+            this.dataGridViewContenutoSupporto.ReadOnly = true;
             this.dataGridViewContenutoSupporto.Size = new System.Drawing.Size(350, 286);
             this.dataGridViewContenutoSupporto.TabIndex = 2;
             // 
@@ -181,6 +186,7 @@
             this.buttonVisualizzaContenuto.TabIndex = 1;
             this.buttonVisualizzaContenuto.Text = "Visualizza Contenuto ->";
             this.buttonVisualizzaContenuto.UseVisualStyleBackColor = true;
+            this.buttonVisualizzaContenuto.Click += new System.EventHandler(this.buttonVisualizzaContenuto_Click);
             // 
             // elencoSupporti
             // 

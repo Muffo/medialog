@@ -19,8 +19,12 @@ namespace Composite
         public string Nome
         {
             get { return _nome; }
-        } 
+        }
+        public override string ToString()
+        {
+            return _nome;
 
+        }
 
     }
 }
