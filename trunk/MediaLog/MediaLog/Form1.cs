@@ -42,12 +42,12 @@ namespace MediaLog
         {
             List<string> res = new List<string>();
             dataGridViewContenutoSupporto.Columns.Clear();
-
+            dataGridViewContenutoSupporto.Columns.Add("nome file", "nome file");
 
             foreach (IEnumerable ele in elencoSupporti.CheckedItems)
             {
                 GestoreCatalogo.visualizzaSupporto(ele.ToString()).GetBulkInit(res);
-                dataGridViewContenutoSupporto.Columns.Add("nome file", "nome file");
+                
                
             }
             foreach (string file in res)
@@ -112,7 +112,9 @@ namespace MediaLog
                 if (ro.Cells[0].Value.Equals(comboBoxNickname.SelectedItem.ToString()))
                 {
                     dataGridViewElencoPersone.Rows.Remove(ro);
+                    comboBoxNicknamePrestiti.Items.Remove(comboBoxNickname.SelectedItem);
                     comboBoxNickname.Items.Remove(comboBoxNickname.SelectedItem);
+                    
                 }
             }
         }

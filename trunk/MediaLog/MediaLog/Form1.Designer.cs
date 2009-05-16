@@ -78,7 +78,6 @@
             this.buttonPresta = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBoxElencoSorgenti = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.viewCatalogo.SuspendLayout();
             this.GroupBoxVisualizzaEliminaSupporto.SuspendLayout();
@@ -113,7 +112,6 @@
             // 
             // viewCatalogo
             // 
-            this.viewCatalogo.Controls.Add(this.comboBoxElencoSorgenti);
             this.viewCatalogo.Controls.Add(this.buttonAggiungiCatalogo);
             this.viewCatalogo.Controls.Add(this.GroupBoxVisualizzaEliminaSupporto);
             this.viewCatalogo.Location = new System.Drawing.Point(4, 22);
@@ -130,7 +128,7 @@
             this.buttonAggiungiCatalogo.Name = "buttonAggiungiCatalogo";
             this.buttonAggiungiCatalogo.Size = new System.Drawing.Size(238, 23);
             this.buttonAggiungiCatalogo.TabIndex = 3;
-            this.buttonAggiungiCatalogo.Text = "-> aggiungi supporto a catalogo";
+            this.buttonAggiungiCatalogo.Text = "aggiungi supporto a catalogo";
             this.buttonAggiungiCatalogo.UseVisualStyleBackColor = true;
             this.buttonAggiungiCatalogo.Click += new System.EventHandler(this.buttonAggiungiCatalogo_Click);
             // 
@@ -615,18 +613,6 @@
             this.label9.TabIndex = 2;
             this.label9.Text = "Id supporto:";
             // 
-            // comboBoxElencoSorgenti
-            // 
-            this.comboBoxElencoSorgenti.FormattingEnabled = true;
-            this.comboBoxElencoSorgenti.Items.AddRange(new object[] {
-            "F:\\",
-            "C:\\\\Users\\\\cometspa\\\\Documents\\\\progettoIngSoft"});
-            this.comboBoxElencoSorgenti.Location = new System.Drawing.Point(13, 13);
-            this.comboBoxElencoSorgenti.Name = "comboBoxElencoSorgenti";
-            this.comboBoxElencoSorgenti.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxElencoSorgenti.TabIndex = 4;
-            this.comboBoxElencoSorgenti.Text = "F:\\";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -713,7 +699,6 @@
         private System.Windows.Forms.DataGridView dataGridViewContenutoSupporto;
         private System.Windows.Forms.GroupBox groupBoxRisultatoRicerca;
         private System.Windows.Forms.DataGridView dataGridViewRisultatoRicerca;
-        private System.Windows.Forms.ComboBox comboBoxElencoSorgenti;
 
     }
 }
