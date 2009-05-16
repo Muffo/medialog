@@ -163,7 +163,7 @@ namespace MediaLog
             }
             foreach (DataGridViewRow ro in dataGridViewElencoPrestiti.Rows)
             {
-                if (ro.Cells[0].Equals(comboBoxElencoSupportiPrestati.SelectedItem))
+                if (ro.Cells[0].Value.Equals(comboBoxElencoSupportiPrestati.SelectedItem))
                 {
                     dataGridViewElencoPrestiti.Rows.Remove(ro);
                     comboBoxIdSupporti.Items.Add(comboBoxElencoSupportiPrestati.SelectedItem);
