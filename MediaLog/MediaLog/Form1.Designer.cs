@@ -30,7 +30,6 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.viewCatalogo = new System.Windows.Forms.TabPage();
-            this.comboBoxElencoSorgenti = new System.Windows.Forms.ComboBox();
             this.buttonAggiungiCatalogo = new System.Windows.Forms.Button();
             this.GroupBoxVisualizzaEliminaSupporto = new System.Windows.Forms.GroupBox();
             this.buttonRimuoviDaCatalogo = new System.Windows.Forms.Button();
@@ -79,6 +78,7 @@
             this.buttonPresta = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.comboBoxElencoSorgenti = new System.Windows.Forms.ComboBox();
             this.tabControl1.SuspendLayout();
             this.viewCatalogo.SuspendLayout();
             this.GroupBoxVisualizzaEliminaSupporto.SuspendLayout();
@@ -123,17 +123,6 @@
             this.viewCatalogo.TabIndex = 0;
             this.viewCatalogo.Text = "Gestione Catalogo";
             this.viewCatalogo.UseVisualStyleBackColor = true;
-            // 
-            // comboBoxElencoSorgenti
-            // 
-            this.comboBoxElencoSorgenti.FormattingEnabled = true;
-            this.comboBoxElencoSorgenti.Location = new System.Drawing.Point(13, 13);
-            this.comboBoxElencoSorgenti.Name = "comboBoxElencoSorgenti";
-            this.comboBoxElencoSorgenti.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxElencoSorgenti.TabIndex = 4;
-            this.comboBoxElencoSorgenti.Text = "F:\\";
-            this.comboBoxElencoSorgenti.Items.Add("F:\\");
-            this.comboBoxElencoSorgenti.Items.Add("C:\\\\Users\\\\cometspa\\\\Documents\\\\progettoIngSoft");
             // 
             // buttonAggiungiCatalogo
             // 
@@ -222,9 +211,12 @@
             // 
             // dataGridViewRisultatoRicerca
             // 
+            this.dataGridViewRisultatoRicerca.AllowUserToAddRows = false;
+            this.dataGridViewRisultatoRicerca.AllowUserToDeleteRows = false;
             this.dataGridViewRisultatoRicerca.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewRisultatoRicerca.Location = new System.Drawing.Point(12, 19);
             this.dataGridViewRisultatoRicerca.Name = "dataGridViewRisultatoRicerca";
+            this.dataGridViewRisultatoRicerca.ReadOnly = true;
             this.dataGridViewRisultatoRicerca.Size = new System.Drawing.Size(475, 230);
             this.dataGridViewRisultatoRicerca.TabIndex = 4;
             // 
@@ -269,6 +261,7 @@
             this.buttonAvviaRicerca.TabIndex = 0;
             this.buttonAvviaRicerca.Text = "Cerca";
             this.buttonAvviaRicerca.UseVisualStyleBackColor = true;
+            this.buttonAvviaRicerca.Click += new System.EventHandler(this.buttonAvviaRicerca_Click);
             // 
             // label3
             // 
@@ -337,6 +330,8 @@
             // 
             // dataGridViewElencoPersone
             // 
+            this.dataGridViewElencoPersone.AllowUserToAddRows = false;
+            this.dataGridViewElencoPersone.AllowUserToDeleteRows = false;
             this.dataGridViewElencoPersone.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewElencoPersone.Location = new System.Drawing.Point(10, 19);
             this.dataGridViewElencoPersone.Name = "dataGridViewElencoPersone";
@@ -371,6 +366,7 @@
             this.buttonCancellaPersona.TabIndex = 1;
             this.buttonCancellaPersona.Text = "Cancella persona selezionata";
             this.buttonCancellaPersona.UseVisualStyleBackColor = true;
+            this.buttonCancellaPersona.Click += new System.EventHandler(this.buttonCancellaPersona_Click);
             // 
             // groupBoxInserimentoPersone
             // 
@@ -416,6 +412,7 @@
             this.buttonInserisciModificaPersona.TabIndex = 8;
             this.buttonInserisciModificaPersona.Text = "inserisci/modifica persona";
             this.buttonInserisciModificaPersona.UseVisualStyleBackColor = true;
+            this.buttonInserisciModificaPersona.Click += new System.EventHandler(this.buttonInserisciModificaPersona_Click);
             // 
             // label8
             // 
@@ -517,6 +514,7 @@
             this.buttonRestituisci.TabIndex = 2;
             this.buttonRestituisci.Text = "Restituzione";
             this.buttonRestituisci.UseVisualStyleBackColor = true;
+            this.buttonRestituisci.Click += new System.EventHandler(this.buttonRestituisci_Click);
             // 
             // comboBoxElencoSupportiPrestati
             // 
@@ -539,9 +537,12 @@
             // 
             // dataGridViewElencoPrestiti
             // 
+            this.dataGridViewElencoPrestiti.AllowUserToAddRows = false;
+            this.dataGridViewElencoPrestiti.AllowUserToDeleteRows = false;
             this.dataGridViewElencoPrestiti.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewElencoPrestiti.Location = new System.Drawing.Point(9, 19);
             this.dataGridViewElencoPrestiti.Name = "dataGridViewElencoPrestiti";
+            this.dataGridViewElencoPrestiti.ReadOnly = true;
             this.dataGridViewElencoPrestiti.Size = new System.Drawing.Size(469, 150);
             this.dataGridViewElencoPrestiti.TabIndex = 1;
             // 
@@ -594,6 +595,7 @@
             this.buttonPresta.TabIndex = 4;
             this.buttonPresta.Text = "Presta!";
             this.buttonPresta.UseVisualStyleBackColor = true;
+            this.buttonPresta.Click += new System.EventHandler(this.buttonPresta_Click);
             // 
             // label10
             // 
@@ -612,6 +614,18 @@
             this.label9.Size = new System.Drawing.Size(63, 13);
             this.label9.TabIndex = 2;
             this.label9.Text = "Id supporto:";
+            // 
+            // comboBoxElencoSorgenti
+            // 
+            this.comboBoxElencoSorgenti.FormattingEnabled = true;
+            this.comboBoxElencoSorgenti.Items.AddRange(new object[] {
+            "F:\\",
+            "C:\\\\Users\\\\cometspa\\\\Documents\\\\progettoIngSoft"});
+            this.comboBoxElencoSorgenti.Location = new System.Drawing.Point(13, 13);
+            this.comboBoxElencoSorgenti.Name = "comboBoxElencoSorgenti";
+            this.comboBoxElencoSorgenti.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxElencoSorgenti.TabIndex = 4;
+            this.comboBoxElencoSorgenti.Text = "F:\\";
             // 
             // Form1
             // 
@@ -692,7 +706,6 @@
         private System.Windows.Forms.Button buttonRestituisci;
         private System.Windows.Forms.ComboBox comboBoxElencoSupportiPrestati;
         private System.Windows.Forms.ComboBox comboBoxNicknamePrestiti;
-        private System.Windows.Forms.ComboBox comboBoxElencoSorgenti;
         private System.Windows.Forms.ComboBox comboBoxNickname;
         private System.Windows.Forms.ComboBox comboBoxIdSupporti;
         private System.Windows.Forms.GroupBox groupBoxElencoPersone;
@@ -700,6 +713,7 @@
         private System.Windows.Forms.DataGridView dataGridViewContenutoSupporto;
         private System.Windows.Forms.GroupBox groupBoxRisultatoRicerca;
         private System.Windows.Forms.DataGridView dataGridViewRisultatoRicerca;
+        private System.Windows.Forms.ComboBox comboBoxElencoSorgenti;
 
     }
 }
