@@ -30,6 +30,8 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.viewCatalogo = new System.Windows.Forms.TabPage();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.buttonAggiungiCatalogo = new System.Windows.Forms.Button();
             this.GroupBoxVisualizzaEliminaSupporto = new System.Windows.Forms.GroupBox();
             this.buttonRimuoviDaCatalogo = new System.Windows.Forms.Button();
@@ -40,12 +42,12 @@
             this.groupBoxRisultatoRicerca = new System.Windows.Forms.GroupBox();
             this.dataGridViewRisultatoRicerca = new System.Windows.Forms.DataGridView();
             this.groupBoxParametriRicerca = new System.Windows.Forms.GroupBox();
+            this.Dimensione = new System.Windows.Forms.CheckBox();
+            this.Estensione = new System.Windows.Forms.CheckBox();
+            this.Nome = new System.Windows.Forms.CheckBox();
             this.comboBoxDimensione = new System.Windows.Forms.ComboBox();
             this.buttonAvviaRicerca = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.viewAnagrafe = new System.Windows.Forms.TabPage();
             this.groupBoxElencoPersone = new System.Windows.Forms.GroupBox();
@@ -112,6 +114,8 @@
             // 
             // viewCatalogo
             // 
+            this.viewCatalogo.Controls.Add(this.comboBox2);
+            this.viewCatalogo.Controls.Add(this.comboBox1);
             this.viewCatalogo.Controls.Add(this.buttonAggiungiCatalogo);
             this.viewCatalogo.Controls.Add(this.GroupBoxVisualizzaEliminaSupporto);
             this.viewCatalogo.Location = new System.Drawing.Point(4, 22);
@@ -122,13 +126,38 @@
             this.viewCatalogo.Text = "Gestione Catalogo";
             this.viewCatalogo.UseVisualStyleBackColor = true;
             // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "DVD",
+            "CD",
+            "BD"});
+            this.comboBox2.Location = new System.Drawing.Point(401, 12);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(95, 21);
+            this.comboBox2.TabIndex = 5;
+            this.comboBox2.Text = "CD";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "F:\\",
+            "D:\\"});
+            this.comboBox1.Location = new System.Drawing.Point(13, 13);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 4;
+            this.comboBox1.Text = "F:\\";
+            // 
             // buttonAggiungiCatalogo
             // 
             this.buttonAggiungiCatalogo.Location = new System.Drawing.Point(146, 13);
             this.buttonAggiungiCatalogo.Name = "buttonAggiungiCatalogo";
             this.buttonAggiungiCatalogo.Size = new System.Drawing.Size(238, 23);
             this.buttonAggiungiCatalogo.TabIndex = 3;
-            this.buttonAggiungiCatalogo.Text = "aggiungi supporto a catalogo";
+            this.buttonAggiungiCatalogo.Text = "Aggiungi supporto a catalogo";
             this.buttonAggiungiCatalogo.UseVisualStyleBackColor = true;
             this.buttonAggiungiCatalogo.Click += new System.EventHandler(this.buttonAggiungiCatalogo_Click);
             // 
@@ -160,10 +189,12 @@
             this.dataGridViewContenutoSupporto.AllowUserToAddRows = false;
             this.dataGridViewContenutoSupporto.AllowUserToDeleteRows = false;
             this.dataGridViewContenutoSupporto.AllowUserToOrderColumns = true;
+            this.dataGridViewContenutoSupporto.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewContenutoSupporto.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewContenutoSupporto.Location = new System.Drawing.Point(143, 20);
             this.dataGridViewContenutoSupporto.Name = "dataGridViewContenutoSupporto";
             this.dataGridViewContenutoSupporto.ReadOnly = true;
+            this.dataGridViewContenutoSupporto.RowHeadersVisible = false;
             this.dataGridViewContenutoSupporto.Size = new System.Drawing.Size(350, 286);
             this.dataGridViewContenutoSupporto.TabIndex = 2;
             // 
@@ -220,22 +251,56 @@
             // 
             // groupBoxParametriRicerca
             // 
+            this.groupBoxParametriRicerca.Controls.Add(this.Dimensione);
+            this.groupBoxParametriRicerca.Controls.Add(this.Estensione);
+            this.groupBoxParametriRicerca.Controls.Add(this.Nome);
             this.groupBoxParametriRicerca.Controls.Add(this.comboBoxDimensione);
             this.groupBoxParametriRicerca.Controls.Add(this.buttonAvviaRicerca);
-            this.groupBoxParametriRicerca.Controls.Add(this.label3);
             this.groupBoxParametriRicerca.Controls.Add(this.textBox2);
-            this.groupBoxParametriRicerca.Controls.Add(this.label2);
-            this.groupBoxParametriRicerca.Controls.Add(this.label1);
             this.groupBoxParametriRicerca.Controls.Add(this.textBox1);
             this.groupBoxParametriRicerca.Location = new System.Drawing.Point(9, 6);
             this.groupBoxParametriRicerca.Name = "groupBoxParametriRicerca";
             this.groupBoxParametriRicerca.Size = new System.Drawing.Size(491, 80);
             this.groupBoxParametriRicerca.TabIndex = 2;
             this.groupBoxParametriRicerca.TabStop = false;
-            this.groupBoxParametriRicerca.Text = "parametri di ricerca file";
+            this.groupBoxParametriRicerca.Text = "Inserisci chiavi di ricerca file";
+            // 
+            // Dimensione
+            // 
+            this.Dimensione.AutoSize = true;
+            this.Dimensione.Location = new System.Drawing.Point(248, 18);
+            this.Dimensione.Name = "Dimensione";
+            this.Dimensione.Size = new System.Drawing.Size(84, 17);
+            this.Dimensione.TabIndex = 8;
+            this.Dimensione.Text = "Dimensione:";
+            this.Dimensione.UseVisualStyleBackColor = true;
+            this.Dimensione.CheckedChanged += new System.EventHandler(this.Dimensione_CheckedChanged);
+            // 
+            // Estensione
+            // 
+            this.Estensione.AutoSize = true;
+            this.Estensione.Location = new System.Drawing.Point(6, 48);
+            this.Estensione.Name = "Estensione";
+            this.Estensione.Size = new System.Drawing.Size(81, 17);
+            this.Estensione.TabIndex = 7;
+            this.Estensione.Text = "Estensione:";
+            this.Estensione.UseVisualStyleBackColor = true;
+            this.Estensione.CheckedChanged += new System.EventHandler(this.Estensione_CheckedChanged);
+            // 
+            // Nome
+            // 
+            this.Nome.AutoSize = true;
+            this.Nome.Location = new System.Drawing.Point(5, 19);
+            this.Nome.Name = "Nome";
+            this.Nome.Size = new System.Drawing.Size(57, 17);
+            this.Nome.TabIndex = 6;
+            this.Nome.Text = "Nome:";
+            this.Nome.UseVisualStyleBackColor = true;
+            this.Nome.CheckedChanged += new System.EventHandler(this.Nome_CheckedChanged);
             // 
             // comboBoxDimensione
             // 
+            this.comboBoxDimensione.Enabled = false;
             this.comboBoxDimensione.FormattingEnabled = true;
             this.comboBoxDimensione.Items.AddRange(new object[] {
             "0      KB - 500   KB",
@@ -245,64 +310,37 @@
             "251 MB - 2,5   GB",
             "2,51 GB - 25    GB",
             "oltre i 25 GB"});
-            this.comboBoxDimensione.Location = new System.Drawing.Point(316, 16);
+            this.comboBoxDimensione.Location = new System.Drawing.Point(338, 16);
             this.comboBoxDimensione.Name = "comboBoxDimensione";
-            this.comboBoxDimensione.Size = new System.Drawing.Size(155, 21);
+            this.comboBoxDimensione.Size = new System.Drawing.Size(147, 21);
             this.comboBoxDimensione.TabIndex = 5;
-            this.comboBoxDimensione.Text = "intervallo dimensione file";
+            this.comboBoxDimensione.Text = "Intervallo dimensione file";
             // 
             // buttonAvviaRicerca
             // 
             this.buttonAvviaRicerca.Location = new System.Drawing.Point(248, 44);
             this.buttonAvviaRicerca.Name = "buttonAvviaRicerca";
-            this.buttonAvviaRicerca.Size = new System.Drawing.Size(223, 23);
+            this.buttonAvviaRicerca.Size = new System.Drawing.Size(237, 23);
             this.buttonAvviaRicerca.TabIndex = 0;
             this.buttonAvviaRicerca.Text = "Cerca";
             this.buttonAvviaRicerca.UseVisualStyleBackColor = true;
             this.buttonAvviaRicerca.Click += new System.EventHandler(this.buttonAvviaRicerca_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(244, 19);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "dimensione :";
-            // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(83, 46);
+            this.textBox2.Enabled = false;
+            this.textBox2.Location = new System.Drawing.Point(93, 46);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(155, 20);
+            this.textBox2.Size = new System.Drawing.Size(145, 20);
             this.textBox2.TabIndex = 3;
-            this.textBox2.Text = "inserisci estensione [jpg;doc,..]";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(7, 49);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(61, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "estensione:";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 13);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nome: ";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(83, 16);
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(93, 16);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(155, 20);
+            this.textBox1.Size = new System.Drawing.Size(145, 20);
             this.textBox1.TabIndex = 0;
-            this.textBox1.Text = "inserisci nome file";
             // 
             // viewAnagrafe
             // 
@@ -384,7 +422,7 @@
             this.groupBoxInserimentoPersone.Size = new System.Drawing.Size(483, 106);
             this.groupBoxInserimentoPersone.TabIndex = 0;
             this.groupBoxInserimentoPersone.TabStop = false;
-            this.groupBoxInserimentoPersone.Text = "inserimento persona:";
+            this.groupBoxInserimentoPersone.Text = "Inserimento persona:";
             // 
             // textBoxTelefono
             // 
@@ -408,7 +446,7 @@
             this.buttonInserisciModificaPersona.Name = "buttonInserisciModificaPersona";
             this.buttonInserisciModificaPersona.Size = new System.Drawing.Size(232, 23);
             this.buttonInserisciModificaPersona.TabIndex = 8;
-            this.buttonInserisciModificaPersona.Text = "inserisci/modifica persona";
+            this.buttonInserisciModificaPersona.Text = "Inserisci/modifica persona";
             this.buttonInserisciModificaPersona.UseVisualStyleBackColor = true;
             this.buttonInserisciModificaPersona.Click += new System.EventHandler(this.buttonInserisciModificaPersona_Click);
             // 
@@ -417,18 +455,18 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(248, 45);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(48, 13);
+            this.label8.Size = new System.Drawing.Size(52, 13);
             this.label8.TabIndex = 7;
-            this.label8.Text = "telefono:";
+            this.label8.Text = "Telefono:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(248, 20);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(37, 13);
+            this.label7.Size = new System.Drawing.Size(39, 13);
             this.label7.TabIndex = 6;
-            this.label7.Text = "e-mail:";
+            this.label7.Text = "E-Mail:";
             // 
             // textBoxNickname
             // 
@@ -453,33 +491,34 @@
             this.textBoxNome.Size = new System.Drawing.Size(157, 20);
             this.textBoxNome.TabIndex = 3;
             this.textBoxNome.Text = "inserire nome (opzionale)";
+            this.textBoxNome.Enter += new System.EventHandler(this.textBoxNome_Enter);
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(7, 71);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(59, 13);
+            this.label6.Size = new System.Drawing.Size(71, 13);
             this.label6.TabIndex = 2;
-            this.label6.Text = "nickname: ";
+            this.label6.Text = "Nickname(*): ";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(6, 45);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
+            this.label5.Size = new System.Drawing.Size(58, 13);
             this.label5.TabIndex = 1;
-            this.label5.Text = "cognome: ";
+            this.label5.Text = "Cognome: ";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(7, 20);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(36, 13);
+            this.label4.Size = new System.Drawing.Size(38, 13);
             this.label4.TabIndex = 0;
-            this.label4.Text = "nome:";
+            this.label4.Text = "Nome:";
             // 
             // viewPrestiti
             // 
@@ -557,7 +596,7 @@
             this.groupBoxInserisciPrestito.Size = new System.Drawing.Size(484, 79);
             this.groupBoxInserisciPrestito.TabIndex = 1;
             this.groupBoxInserisciPrestito.TabStop = false;
-            this.groupBoxInserisciPrestito.Text = "inserimento nuovo prestito";
+            this.groupBoxInserisciPrestito.Text = "Inserimento nuovo prestito";
             // 
             // comboBoxIdSupporti
             // 
@@ -584,6 +623,7 @@
             this.textBoxNuovoNickname.Size = new System.Drawing.Size(178, 20);
             this.textBoxNuovoNickname.TabIndex = 5;
             this.textBoxNuovoNickname.Text = "nuovo nickname";
+            this.textBoxNuovoNickname.Visible = false;
             // 
             // buttonPresta
             // 
@@ -662,11 +702,8 @@
         private System.Windows.Forms.Button buttonRimuoviDaCatalogo;
         private System.Windows.Forms.GroupBox groupBoxParametriRicerca;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ComboBox comboBoxDimensione;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.GroupBox groupBoxInserimentoPersone;
         private System.Windows.Forms.TextBox textBoxNickname;
         private System.Windows.Forms.TextBox textBoxCognome;
@@ -699,6 +736,11 @@
         private System.Windows.Forms.DataGridView dataGridViewContenutoSupporto;
         private System.Windows.Forms.GroupBox groupBoxRisultatoRicerca;
         private System.Windows.Forms.DataGridView dataGridViewRisultatoRicerca;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.CheckBox Nome;
+        private System.Windows.Forms.CheckBox Estensione;
+        private System.Windows.Forms.CheckBox Dimensione;
+        private System.Windows.Forms.ComboBox comboBox2;
 
     }
 }

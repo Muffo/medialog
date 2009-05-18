@@ -24,6 +24,7 @@ namespace MediaLog
             GestoreCatalogo.aggiungiSupporto("F:\\");
            CatalogoSingleton catSing = CatalogoSingleton.getInstance();
            RefreshSupporti(catSing);
+           MessageBox.Show("Id supporto: sup" + (CatalogoSingleton.getInstance().Supporti.Count-1));
         }
 
         private void RefreshSupporti(CatalogoSingleton catSing)
@@ -35,6 +36,8 @@ namespace MediaLog
                 elencoSupporti.Items.Add(sup.Id);
                 comboBoxIdSupporti.Items.Add(sup.Id);
                 elencoSupporti.SetItemChecked(0, true);
+
+                elencoSupporti.ColumnWidth = 200;
             }
         }
 
@@ -66,9 +69,10 @@ namespace MediaLog
         private void buttonAvviaRicerca_Click(object sender, EventArgs e)
         {
             dataGridViewRisultatoRicerca.Columns.Clear();
-            if (textBox1.Text.Equals("inserisci nome file") && textBox2.Text.Equals("inserisci estensione [jpg;doc,..]"))
+            
+            if ((textBox1.Text.Equals("")&& textBox1.Enabled) || (textBox2.Text.Equals("")&& textBox2.Enabled))
             {
-                MessageBox.Show("nessun parametro specifico inserito!");
+                MessageBox.Show("Nessun valore specifico inserito!");
                 
             }
             else
@@ -87,7 +91,7 @@ namespace MediaLog
         {
             if (textBoxNickname.Text.Equals("nome univoco (obbligatorio)"))
             {
-                MessageBox.Show("inserire nickname!!");
+                MessageBox.Show("Inserire nickname!!");
                 
             }
             else
@@ -124,12 +128,12 @@ namespace MediaLog
 
             if ((comboBoxNicknamePrestiti.SelectedItem== null) && textBoxNuovoNickname.Text.Equals("nuovo nickname"))
             {
-                MessageBox.Show("seleziona nickname o inserisci nuovo nickname!");
+                MessageBox.Show("Seleziona nickname o inserisci nuovo nickname!");
                 return;
             }
             if (comboBoxIdSupporti.SelectedItem==null)
             {
-                MessageBox.Show("seleziona un supporto!");
+                MessageBox.Show("Seleziona un supporto!");
                 return;
             }
             {
@@ -173,6 +177,26 @@ namespace MediaLog
                     
                 }
             }
+        }
+
+        private void Nome_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox1.Enabled = Nome.Checked;
+        }
+
+        private void Dimensione_CheckedChanged(object sender, EventArgs e)
+        {
+            comboBoxDimensione.Enabled = Dimensione.Checked;
+        }
+
+        private void Estensione_CheckedChanged(object sender, EventArgs e)
+        {
+            textBox2.Enabled = Estensione.Checked;
+        }
+
+        private void textBoxNome_Enter(object sender, EventArgs e)
+        {
+            
         }
     
         
