@@ -27,6 +27,7 @@ namespace Catalogo
             Supporto res = new Supporto("sup"+CatalogoSingleton.getInstance().Supporti.Count, "DVD", DirRoot);
             addFile(root, ListRoot, DirRoot);
             addDir(root, ListRoot, DirRoot);
+
             return res;
         }
 
