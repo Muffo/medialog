@@ -1,0 +1,1 @@
+MediaLog is an easy solution for CD/DVD catalog.
